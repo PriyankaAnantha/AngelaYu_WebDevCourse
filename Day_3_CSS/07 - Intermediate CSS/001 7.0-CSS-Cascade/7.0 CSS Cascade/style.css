@@ -8,5 +8,37 @@
 p {
   color: yellow;
   margin: 0;
-  padding: 0;
+ 
 }
+/* My Code 
+p[class]{
+  color: white;
+  background-color: red;
+  padding: 10px;
+}
+
+.box[class]{
+  padding: 10px;
+  }
+
+.box[id]{
+  padding: 10px;
+  background-color: purple
+}
+*/
+.inner-box{
+  padding: 10px;
+  background-color: red;
+}
+
+.white-text{
+  color: white;
+}
+
+#outer-box{
+  padding: 10px;
+  background-color: purple;
+}
+
+
+
