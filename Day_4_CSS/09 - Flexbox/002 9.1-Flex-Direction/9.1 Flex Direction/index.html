@@ -8,12 +8,19 @@
   <!-- HINT:
   https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
   https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+  * or .class >div
   -->
   <style>
     .container {
       color: white;
       border: 5px solid gold;
-      display: flex;
+      display: inline-flex;
+      flex-direction: column;
+      
+    }
+    .container > div{
+      flex-basis: 100px;
+     
     }
 
     /*
