@@ -40,8 +40,18 @@
   text-align: center;
   
 }
-#testimonial img{
+#testimonial .dogimg{
   width: 100px;
   border-radius: 50%;
   margin: 20px;
+}
+#testimonial .techcol{
+  margin: 20px;
+  width: 100px;
+  padding: 10px;
+}
+
+#pricing{
+  text-align: center;
+  padding: 3rem;
 }
