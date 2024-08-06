@@ -38,6 +38,7 @@
 #testimonial{
  
   text-align: center;
+  background-color: whitesmoke;
   
 }
 #testimonial .dogimg{
@@ -49,9 +50,11 @@
   margin: 20px;
   width: 100px;
   padding: 10px;
+  margin-bottom: 100px;
 }
 
 #pricing{
   text-align: center;
   padding: 3rem;
 }
+
