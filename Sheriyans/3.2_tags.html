@@ -1,0 +1,103 @@
+<!--
+------------------------------------------------
+h1-h6 p b i sup sub
+lorem3 gives 3 words
+lorem gives 1 paragraph
+sup - superscript
+sub - subscript
+
+------------------------------------------------
+emmet- tab, shift enter, shift tab
+ctrl c, ctrl v
+ctrl d - select multiple instances of a word and then do escp to deselect
+alt tab - switch between tabs       
+------------------------------------------------
+hr br ol ul li
+hr - horizontal rule
+br - break
+ol - ordered list
+ul - unordered list - to remove the bullets do- list-style-type: none;
+
+li - list item
+
+------------------------------------------------
+img a
+
+img - image
+src - source/ address of the image
+alt - alternative text - if the image is not loaded, the alt text is shown
+width - width of the image
+height - height of the image
+
+a - anchor tag - link to another page using href
+href= "#" - goes to the top of the page
+href= "https://www.google.com" - goes to the google page
+target=_blank - opens the link in a new tab
+
+
+------------------------------------------------
+form
+form - form tag
+label - label tag - for attribute - connects the label to the input
+input - input tag - type attribute - text, email, password, checkbox, radio, file, range, date, color, submit
+placeholder - placeholder attribute - gives a hint to the user
+name - name attribute - gives a name to the input
+id - id attribute - gives a unique id to the input
+------------------------------------------------
+
+div input class id 
+
+div span
+div - division - block level element
+span - span - inline element
+id - id attribute - gives a unique id to the element
+class - class attribute - gives a class to the element
+------------------------------------------------
+
+------------------------------------------------
+tag - opening <tag> closing </tag>
+
+attribute - name, value pair
+div ka basic nature is a rectangle, jho width deta h, height nhi deta 
+jab height zero hota h tb, there is basically nothing, not even a line 
+
+use of divs : 
+    1. make a rectangle 
+    2. to have more than two  elements. rectangles inside a box 
+
+    u r considered as an idiot unitil something works
+
+   thought  id, class we can give diff meaningful names to different elements 
+
+-->
+
+<!DOCTYPE html> <!-- conveys html5-->
+<html lang="en"> <!-- wrapper to couple hed and body-->
+<head> <!--head mh h instructions- plugins-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    #red {
+        color: red;
+    }
+    </style>
+</head>
+<body>  <!--all content visible in the -->
+    <div> 
+        <!-- inspect widthx height in content area -->
+          <!-- div rectangle banata h jis ka width hoti h lekin height nhi -->
+           <!-- ek se zyada cheezonko couple krte rkta h-->
+        
+
+    </div>
+    <!-- id helps in choosing elements individually, uniquly, id ka nam kabhi repeat mt kro-->
+      <!-- class ka nam repeat kr skte h. helps in grouping the elements and styling them-->
+    <p id="red"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p id="green"> <b>hi</b>Lorem <i>hellow</i>ipsum dolor sit amet consectetur adipisicing elit. Deleniti minima dolorem quas.</p>
+    <p> Lorem ipsum dolor sit amet. </p>
+    <p> 2 <sup>2</sup>=4</p>
+    <p> 2 <sub>2</sub>=4</p>
+
+</body>
+</html>
