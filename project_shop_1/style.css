@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+nav {
+    width: 100%;
+    height: 100px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+    padding: 0 20px;
+    
+}
+
+nav a {
+    color: black;
+    font-size: 20px;
+    font-weight: 600; /*bold/ can take a number too 100 to 900*/
+    font-family: Helvetica, sans-serif;
+    text-decoration: none; /*remove underline*/
+    
+}
+
+nav i{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 200;
+}
+#tagline {
+    width: 100%;
+    background-color: white;
+    padding: 40px 80px;
+  
+}
+
+#tagline h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 90px;
+   
+}
+
+#para {
+   
+    width: 100%;
+   
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#para p{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    line-height: 32px;
+
+}
+
+#right {
+    width: 20%;
+  
+ 
+}
+
+.elem{
+
+    padding: 20px 0;
+    border-top: 1px solid black;
+    width: 40%;
+
+
+}
+.elem a{
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
