@@ -1,3 +1,10 @@
+/* crtl slash to comment out */
+/* to scroll down use keys: crtl + down arrow
+to select and paste multiple lines: alt + shift + down arrow
+to move lines up or down: alt + up or down arrow
+
+ */
+
 *{
     margin: 0;
     padding: 0; 
@@ -39,56 +46,11 @@ nav i{
     font-size: 20px;
     font-weight: 200;
 }
-#tagline {
+#center {
     width: 100%;
-    background-color: white;
+    background-color: red;
     padding: 40px 80px;
   
 }
 
-#tagline h1 {
-    font-size: 6rem;
-    font-weight: 400;
-    color: black;
-    margin-bottom: 20px;
-    line-height: 90px;
-   
-}
-
-#para {
-   
-    width: 100%;
-   
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-#para p{
-    font-size: 1.5rem;
-    color: black;
-    font-weight: 600;
-    line-height: 32px;
-
-}
-
-#right {
-    width: 20%;
-  
  
-}
-
-.elem{
-
-    padding: 20px 0;
-    border-top: 1px solid black;
-    width: 40%;
-
-
-}
-.elem a{
-    color: black;
-    font-weight: 600;
-    font-size: 1.5rem;
-}
