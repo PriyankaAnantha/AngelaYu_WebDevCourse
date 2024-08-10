@@ -7,6 +7,7 @@
 html, body{
     height: 100%;
     width: 100%;
+
 }
 
 /**************************/
@@ -51,7 +52,56 @@ color and background-color
 h1{ /*****targets all h1 in the doc*************/
     color: red;
     background-color: black;
-    
+
 
 }
 
+.main2{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+}
+
+.main3{
+    width: 50%;
+    height: 50%;
+    background-color: green;
+}
+
+.practice{
+    width: 600px;
+    height: 200px;
+    background-color: yellow;
+    overflow: hidden;
+}
+#child{
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+}
+
+.em {
+    font-size: 16px;
+    width: 20em;
+    height: 20em;
+    background-color: red;
+}
+
+
+html{
+    font-size: 20px;
+}
+.rem{
+    width: 2rem;
+    height: 2rem;
+    background-color: blue;
+}
+
+
+.maxmin{
+    min-width: 100px;
+    width: 1200px; /*doesnt matter how much ever you give, it stays the same as max width */
+    max-width: 500px;
+    height: 200px;
+    background-color: black;
+}
