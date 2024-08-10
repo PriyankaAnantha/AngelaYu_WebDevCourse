@@ -1,0 +1,159 @@
+<!-- semantic html:
+A note about semantics: Semantics is the study of meaning. In the context of HTML, semantics refers to the meaning of the code and what it conveys to the browser and developer. 
+For example, the <p> tag in HTML 100% represents a paragraph of text. This is a semantic tag because it conveys the meaning of the content it contains. 
+The <div> tag, on the other hand, does not convey any meaning. It is a generic container for other elements and is not considered semantic.
+
+    the name of the tag itself conveys the browser the meaning of the content it contains.
+
+        header  --Fist section of the website: Jubotron/ main landing page of the website can put in the header
+        nav     --Navigation bar
+        main   --Main content of the website. the whole website comes under the main tag
+        article -- sub elements of the main content can be put here
+        aside  --side bar of the website. used usually for fixed elements 
+        section --pages of the website can be put in the section tag
+            audio -- audio support
+            video -- video support
+        footer --footer of the website
+      
+      
+     < header  > - A header for the content. This can contain a logo, navigation, search bar, etc. 
+    <nav> - A navigation menu for the site. This can contain links to different pages on the site.
+    <main> - The main content of the page. This can contain articles, sections, etc.
+    <article> - An article or blog post. This can contain text, images, videos, etc.
+    <section> - A section of content. This can contain articles, images, videos, etc.
+    <aside> - Content that is related to the main content. This can contain sidebars, ads, etc.
+    <footer> - A footer for the content. This can contain copyright information, contact information, etc.
+-->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style> 
+ /*Boiler plate code*/
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+      
+    }
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 12px 30px; /*12px top and bottom, 30px left and right*/
+        background-color: #f3f3f3;
+    }
+    header{
+        padding: 3vw;
+        background-color: #3333;
+    }
+    section {
+       width: 100%;
+        height: 100vh;
+        background-color:#3345;
+        padding: 30px;
+    }
+    
+    article{
+        background-color: #f3f3f3;
+        width: 50%;
+        padding: 30px;
+        border-radius: 10px;
+        
+
+    }
+
+    aside{
+        padding: 20px;
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        position: fixed;
+        right: 10px;
+        top: 70%;
+        transform: translate(0, -50%);
+
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        background-color: white;
+    }
+    main{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    video{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform: translate(-50%, -50%) /*centering the video*/
+    }
+
+ </style>
+</head>
+
+<section>
+
+    <main>
+
+        <nav>   
+            <h3>Home</h3>
+    
+            <div class="links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Services</a>
+            </div>
+        </nav>
+    
+        <header>
+            <h1>Welcome to my website</h1>
+            <p>This is a paragraph of text that describes the website.</p>
+        </header>
+    
+        <section> 
+                <article>
+                    <h2>Article 1</h2>
+                    <p>This is the first article on the website. It contains some text and images.</p>
+                  
+                </article>
+        </section>
+       
+            <aside>
+                <h3>Related Content</h3>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+            </aside>
+    
+            
+    <footer>
+        <p>&copy 2021 My Website. All rights reserved.</p>
+    </footer>
+
+    </main>
+    
+    <audio src="" controls> A audio clip</audio>
+
+    <main>
+        <video src="" autoplay muted loop> A audio clip</video>
+    </main>
+  
+</body>
+</html>
+
