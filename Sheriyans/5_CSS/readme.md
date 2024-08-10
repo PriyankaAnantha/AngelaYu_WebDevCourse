@@ -75,15 +75,71 @@ max-width and max-height
 
 ________________________________________________
 
+## 5.4 font family 
+sans serif same width no sharp edge 
+serif - tailed edges 
+
+-- 
+google fonts
+- filter - decoratiev stroke 
+- download --> install 
+--
+font-weight: takes a number;
+text-transform: make first word of each word capital
+text-decoration - underline 
+
+
+
 font-family 
+--
 font-size
-line-height
-text-align
+pixels are unresponsive 
+for responsive font size -- keep vw
 
+line-height: 1;
+height between lines. can use for styling a paragraph
+
+text-align: left / right / justify / center / start
+both side aligns
+start is same as left 
+
+---
 padding
-margin
-border
+space within an element 
+child is always at the edge corner. 
+to get the child inside--> 
+give padding to the parent 
 
+
+margin
+between two element 
+eg: margin-bottom: 20px
+
+-> values dena ka tareeka : 
+single value: all sides 
+two values: top/bottom, right/left ------clock wise 
+four values: top, right bottom, left --> clockwise 
+
+--
+
+border
+boder boder-style boder-color = boder 
+eg: boder: 3px solid black;
+
+styles: solid, dashed, double
+
+
+--> border radius 
+makes the edges of the box round
+border-radius: 50% ; makes the element circular 
+border sirf circle hone tk kat skte h. can only have the radius till circular
+
+pixels se values dena start kro. 
+
+capsule ke liye: width ka half kro
+--
+
+# 5.5 Display property 
 display
 position
 background
