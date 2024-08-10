@@ -13,7 +13,45 @@ html, body{
 
 
 
-h1{
+h1{ /*****targets all h1 in the doc*************/
     color: red
 
 }
+
+/***box= div *****************/
+/***jaha bhi ek se jaada elements dikhe waha div h*****************/
+/***jaha bhi rectangle h waha div h***********************/
+
+
+/******ek box banao jo red ho ********************/
+/*
+steps : 
+1. create a div in html
+2. target the div in css using class, id or element and give w h 
+3. give color to the div
+*/
+
+.main {
+    width : 300px;
+    height: 300px;
+    background-color: red;
+
+}
+
+/**
+h1 - tag
+.h1 - class
+#h1 - id
+
+**/
+
+/*
+color and background-color
+*/
+h1{ /*****targets all h1 in the doc*************/
+    color: red;
+    background-color: black;
+    
+
+}
+
