@@ -1,5 +1,5 @@
 
-# Web Development Journey: My Roadmap & Projects
+# Web Development Journey Tracker
 
 This repository documents my learning journey in web development, starting from the basics and progressing to more advanced concepts. It includes theory from [Udemy Web Development Course](https://www.udemy.com/topic/web-development/) and hands-on projects from [Sheryians' Front-End Domination Course](https://sheryians.com/courses/courses-details/Front-End%20Domination:%20Create%20Anything%20with%20Code).
 
@@ -36,7 +36,6 @@ This repository documents my learning journey in web development, starting from 
 A frontend responsive website created with HTML, and CSS.
 
 
-
 ![image](https://github.com/user-attachments/assets/04add4ff-00b1-4440-8996-0d302e74b3bd)
 
 
@@ -70,6 +69,7 @@ A frontend responsive website created with HTML, and CSS.
 
 
 
+
 ## How to Use
 
 1. Clone the repository:
@@ -83,6 +83,8 @@ A frontend responsive website created with HTML, and CSS.
 
 3. Explore the `Projects` folder for hands-on practice.
 
+
+
 ## Resources
 
 - [Udemy Web Development Course](https://www.udemy.com/topic/web-development/)
@@ -92,6 +94,7 @@ A frontend responsive website created with HTML, and CSS.
 ## Contributing
 
 Feel free to contribute to this roadmap by suggesting resources or new projects via pull requests.
+
 
 ## License
 
