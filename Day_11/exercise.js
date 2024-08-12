@@ -6,3 +6,4 @@ function who_buys_lunch(names){
     console.log(finalbuyer);
     return finalbuyer;  
 }
+who_buys_lunch(names);
