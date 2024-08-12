@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #393E46;
+  background-color: #1c1c1d;
 }
 
 h1 {
@@ -19,12 +19,12 @@ h1 {
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
   font-size: 8rem;
-  color: #4ECCA3;
+  color: #fffb00;
 }
 
 p {
   font-size: 2rem;
-  color: #4ECCA3;
+  color: #fcd9d9;
   font-family: 'Indie Flower', cursive;
 }
 
