@@ -51,5 +51,16 @@ $('button').on('click', function() {
 
 
 // project idea - keyboard typer game using jQuery
+// logic for the game
+// algo 
+// 1. generate a letter 
+// 2. display the letter on the screen
+// 3. listen for the keypress event
+// 4. check if the key pressed is the same as the first letter of the word  
+// 5. if it is, remove the first letter of the word and display the next letter
+// 6. if the word is empty, generate a new word
+// 7. keep track of the score
+// 8. display the score on the screen
+// 9. if the player types the wrong letter, end the game and display the score
 
 
