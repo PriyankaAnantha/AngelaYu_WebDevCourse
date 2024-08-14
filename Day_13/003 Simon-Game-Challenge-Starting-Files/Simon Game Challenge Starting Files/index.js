@@ -98,3 +98,27 @@ function startOver() {
     gamePattern = [];
     started = false;
 }
+
+
+
+// i am not understanding the logic of the game
+// logic of the game
+// 1. The game will start with the level 0 and the level title will be "Level 0".   
+// 2. The game will generate a random color and play the sound for that color.
+// 3. The player will have to click on the button with the same color as the one shown by the game.
+// 4. If the player clicks the correct color, the game will generate another random color and play the sound for that color.
+// 5. The player will have to remember the sequence of colors and click on the buttons in the same sequence.
+// 6. If the player clicks the wrong color, the game will play the wrong sound and the game will be over.
+// 7. The player can restart the game by pressing any key after the game is over.
+// 8. The game will keep track of the level and update the level title accordingly.
+// 9. The game will keep track of the game pattern and the player's clicked pattern.
+// 10. The game will check if the player's clicked pattern matches the game pattern at each level.
+// 11. If the player completes the game pattern for a level, the game will proceed to the next level.
+// 12. The game will keep track of the game state to prevent multiple key presses to start the game.
+// 13. The game will play the sound and animate the button press when the player clicks a button.
+// 14. The game will restart the game when the player clicks the wrong color.
+// 15. The game will show a game over message and play the wrong sound when the player clicks the wrong color.
+// 16. The game will restart the game when the player presses any key after the game is over.
+
+
+
