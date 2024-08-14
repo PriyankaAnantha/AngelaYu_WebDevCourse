@@ -104,7 +104,7 @@ footer {
   background-color: #333;
   color: #FEF2BF;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding: 100px;
   border: 2px solid #FEF2BF;
   width: 80%; /* Could be more or less, depending on screen size */
   max-width: 600px;

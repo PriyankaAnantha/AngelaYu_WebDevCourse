@@ -15,8 +15,17 @@ function startGame() {
         started = true;
         nextSequence();
     } else {
+        // Trigger game over sequence if the game is already started
+        playSound("wrong");
+        $("body").addClass("game-over");
+        $("#level-title").text("Alas! GameOver! Restart!");
+
+        setTimeout(function() {
+            $("body").removeClass("game-over");
+        }, 200);
+
+       
         startOver();
-        nextSequence();
     }
 }
 
@@ -50,7 +59,7 @@ function checkAnswer(currentLevel) {
     } else {
         playSound("wrong");
         $("body").addClass("game-over");
-        $("#level-title").text("Game Over, Press Any Key or Start Button to Restart");
+        $("#level-title").text("Game Over! Press Any Key or Start Button to Restart");
 
         setTimeout(function() {
             $("body").removeClass("game-over");
