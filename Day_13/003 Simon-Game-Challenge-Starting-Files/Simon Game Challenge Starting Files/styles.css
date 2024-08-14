@@ -3,23 +3,20 @@ body {
   background-color: #000000;
 }
 
-#level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1rem;
-  margin:  5%;
-  color: #FEF2BF;
-}
-.heading {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 0.5rem;
-  margin:  5%;
-  color: #FEF2BF;
-  
+header h1{
+  visibility: hidden;
 }
 
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+
 .container {
-  display: flex;
-justify-content: center;
+  display: block;
   width: 50%;
   margin: auto;
 
@@ -65,4 +62,63 @@ footer {
   font-size: 1rem;
   margin:  5%;
   color: #FEF2BF;
+}
+
+
+/* new */
+/* Button styles */
+#description-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 20px 0;
+  color: #FEF2BF;
+  background-color: #333;
+  border: 2px solid #FEF2BF;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#description-btn:hover {
+  background-color: #FEF2BF;
+  color: #333;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #333;
+  color: #FEF2BF;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 2px solid #FEF2BF;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 600px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.close-btn {
+  color: #FEF2BF;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #FF6347; /* Tomato color for hover */
+  text-decoration: none;
+  cursor: pointer;
 }
