@@ -11,7 +11,8 @@ playSound(randomChosenColour);
 function playSound(name){
     var audio = new Audio("sounds/" + name + ".mp3");
     audio.play();
-}
+} // this function will play the sound of the button that is pressed.
+
 
 
 function nextSequence(){
