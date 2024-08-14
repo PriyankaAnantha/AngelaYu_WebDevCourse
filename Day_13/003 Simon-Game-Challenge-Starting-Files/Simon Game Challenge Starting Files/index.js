@@ -101,7 +101,7 @@ function startOver() {
 
 
 
-// i am not understanding the logic of the game
+
 // logic of the game
 // 1. The game will start with the level 0 and the level title will be "Level 0".   
 // 2. The game will generate a random color and play the sound for that color.
