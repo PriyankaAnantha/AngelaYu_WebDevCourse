@@ -5,6 +5,8 @@ var randomChosenColour = buttonColours[nextSequence()];
 var gamePattern = [];
 gamePattern.push(randomChosenColour);
 
+$("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);   // this will flash the button of the randomChosenColour
+
 function nextSequence(){
     var randomNumber = (Math.floor((Math.random() * 4)+0));
     // the above line will generate a random number between 0 and 2. 
