@@ -1,12 +1,31 @@
 
 var buttonColours = ["red", "blue", "green", "yellow"];
 var randomChosenColour = buttonColours[nextSequence()];
+var userClickedPattern = [];
+
+userClickedPattern.push(randomChosenColour);
 
 var gamePattern = [];
 gamePattern.push(randomChosenColour);
 
 $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);   // this will flash the button of the randomChosenColour
 playSound(randomChosenColour);
+
+
+$(".btn").click(function(){
+    var userChosenColour = $(this).attr("id");
+    playSound(userChosenColour);
+    animatePress(userChosenColour);
+});
+
+function animatePress(currentColour){
+    $("#" + currentColour).addClass("pressed");
+    setTimeout(function(){
+        $("#" + currentColour).removeClass("pressed");
+    }, 100);
+    
+} // this function will animate the button that is pressed.
+
 
 function playSound(name){
     var audio = new Audio("sounds/" + name + ".mp3");
