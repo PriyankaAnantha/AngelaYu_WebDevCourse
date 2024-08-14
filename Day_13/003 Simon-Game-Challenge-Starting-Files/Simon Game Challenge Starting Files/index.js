@@ -1,52 +1,100 @@
-
+// Array of button colors
 var buttonColours = ["red", "blue", "green", "yellow"];
-var randomChosenColour = buttonColours[nextSequence()];
+
+// Arrays to store the game pattern and user's clicked pattern
+var gamePattern = [];
 var userClickedPattern = [];
 
-userClickedPattern.push(randomChosenColour);
+// Variables to track game state
+var started = false;
+var level = 0;
 
-var gamePattern = [];
-gamePattern.push(randomChosenColour);
-
-$("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);   // this will flash the button of the randomChosenColour
-playSound(randomChosenColour);
-
-
-$(".btn").click(function(){
-    var userChosenColour = $(this).attr("id");
-    playSound(userChosenColour);
-    animatePress(userChosenColour);
+// Event listener for key press to start the game
+$(document).keypress(function() {
+    if (!started) {
+        // Update level title and start the game
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        started = true;
+    }
 });
 
-function animatePress(currentColour){
-    $("#" + currentColour).addClass("pressed");
-    setTimeout(function(){
-        $("#" + currentColour).removeClass("pressed");
+// Event listener for button click
+$(".btn").click(function() {
+    // Get the color of the clicked button
+    var userChosenColour = $(this).attr("id");
+    // Add the color to the user's clicked pattern
+    userClickedPattern.push(userChosenColour);
+
+    // Play sound and animate button press
+    playSound(userChosenColour);
+    animatePress(userChosenColour);
+
+    // Check if the user's pattern is correct
+    checkAnswer(userClickedPattern.length-1);
+});
+
+// Function to check if the user's pattern is correct
+function checkAnswer(currentLevel) {
+    // Check if the current color in the game pattern matches the user's clicked pattern
+    if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
+        // If the user has completed the pattern, proceed to the next level
+        if (userClickedPattern.length === gamePattern.length){
+            setTimeout(function () {
+                nextSequence();
+            }, 1000);
+        }
+    } else {
+        // If the user's pattern is incorrect, play wrong sound, show game over message, and restart the game
+        playSound("wrong");
+        $("body").addClass("game-over");
+        $("#level-title").text("Game Over, Press Any Key to Restart");
+
+        setTimeout(function () {
+            $("body").removeClass("game-over");
+        }, 200);
+
+        startOver();
+    }
+}
+
+// Function to generate the next color in the game pattern
+function nextSequence() {
+    // Reset the user's clicked pattern
+    userClickedPattern = [];
+    // Increment the level and update level title
+    level++;
+    $("#level-title").text("Level " + level);
+    // Generate a random number between 0 and 3
+    var randomNumber = Math.floor(Math.random() * 4);
+    // Get the color corresponding to the random number
+    var randomChosenColour = buttonColours[randomNumber];
+    // Add the color to the game pattern
+    gamePattern.push(randomChosenColour);
+
+    // Show the color by fading in and out
+    $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+    // Play sound for the color
+    playSound(randomChosenColour);
+}
+
+// Function to animate button press
+function animatePress(currentColor) {
+    $("#" + currentColor).addClass("pressed");
+    setTimeout(function () {
+        $("#" + currentColor).removeClass("pressed");
     }, 100);
-    
-} // this function will animate the button that is pressed.
+}
 
-
-function playSound(name){
+// Function to play sound
+function playSound(name) {
     var audio = new Audio("sounds/" + name + ".mp3");
     audio.play();
-} // this function will play the sound of the button that is pressed.
+}
 
-
-
-function nextSequence(){
-    var randomNumber = (Math.floor((Math.random() * 4)+0));
-    // the above line will generate a random number between 0 and 2. 
-    // Math.random() generates a random number between 0 and 1.
-    // Math.floor() will round off the number to the nearest integer.
-    // So, if Math.random() generates 0.5, then Math.floor(0.5) will be 0.
-
-    //*****************************************************
-    // if i want a radom number of range x to y, then i will use Math.floor(Math.random() * (y - x + 1)) + x) 
-    //*****************************************************
-    //why +1? because Math.random() generates a number between 0 and 1, so if i want to generate a number between 0 and 2, then i will use Math.floor(Math.random() * (2 - 0 + 1)) + 0 = Math.floor(Math.random() * 3) + 0 = Math.floor(Math.random() * 3) = 0, 1, 2. 
-    // why +x? because i want to start the range from x.
-    return randomNumber;
-
-
+// Function to restart the game
+function startOver() {
+    level = 0;
+    gamePattern = [];
+    started = false;
 }
