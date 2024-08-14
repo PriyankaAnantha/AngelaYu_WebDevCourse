@@ -48,7 +48,7 @@ function checkAnswer(currentLevel) {
         // If the user's pattern is incorrect, play wrong sound, show game over message, and restart the game
         playSound("wrong");
         $("body").addClass("game-over");
-        $("#level-title").text("Game Over, Press Any Key to Restart");
+        $("#level-title").text("Game Over, Press Any Key or start button to Restart");
 
         setTimeout(function () {
             $("body").removeClass("game-over");
@@ -148,3 +148,29 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+$(document).ready(function() {
+    var gameStarted = false;
+  
+    // Function to start the game
+    function startGame() {
+      if (!gameStarted) {
+        gameStarted = true;
+        // Your existing game start logic here
+        nextSequence();
+      } else {
+        startOver();
+        nextSequence();
+      }
+    }
+  
+    // Start game on keypress
+    $(document).keypress(function() {
+      startGame();
+    });
+  
+    // Start game on button click
+    $("#start-button").click(function() {
+      startGame();
+    });
+  });
