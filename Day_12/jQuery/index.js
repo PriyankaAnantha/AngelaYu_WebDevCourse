@@ -53,7 +53,7 @@ $('button').on('click', function() {
 // project idea - keyboard typer game using jQuery
 // logic for the game
 // algo 
-// 1. generate a letter 
+// 1. generate a letter
 // 2. display the letter on the screen
 // 3. listen for the keypress event
 // 4. check if the key pressed is the same as the first letter of the word  
