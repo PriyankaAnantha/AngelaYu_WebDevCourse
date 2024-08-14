@@ -79,3 +79,9 @@ Usage:
 PS C:\Users\PRIYA> nvm --version
 1.1.12
 PS C:\Users\PRIYA>
+
+
+node --version //finds the current version of node running 
+nvm --version //node version manager 
+npm --version // node package manager
+
