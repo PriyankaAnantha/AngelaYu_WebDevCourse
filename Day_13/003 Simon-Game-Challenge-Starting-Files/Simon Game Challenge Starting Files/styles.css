@@ -1,6 +1,7 @@
 body {
   text-align: center;
   background-color: #000000;
+
 }
 
 header h1{
@@ -22,12 +23,13 @@ header h1{
 
 }
 
+
 .btn {
   margin: 25px;
   display: inline-block;
   height: 200px;
   width: 200px;
-  border: 10px solid rgb(244, 238, 191);
+  border: 10px solid rgb(253, 224, 0);
   border-radius: 20%;
 }
 
@@ -107,6 +109,7 @@ footer {
   width: 80%; /* Could be more or less, depending on screen size */
   max-width: 600px;
   font-family: 'Press Start 2P', cursive;
+  line-height: 2rem;
 }
 
 .close-btn {
