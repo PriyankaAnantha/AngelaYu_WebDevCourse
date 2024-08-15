@@ -1,0 +1,16 @@
+{
+  "name": "qr-code-generator",
+  "version": "1.0.0",
+  "description": "Mini project that takes user input and generates a qr-image to turn the entered URL into a QR code image",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Priyanka A",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^5.3.8",
+    "qr-image": "^3.2.0"
+  }
+}
