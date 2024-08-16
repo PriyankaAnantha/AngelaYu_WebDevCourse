@@ -15,20 +15,20 @@ app.get("/", (req, res) => {
 
 app.post("/register", (req, res) => {
   //Do something with the data
-  res.sendStatus(201);
+  res.sendStatus(201); //Created
 });
 
 app.put("/user/angela", (req, res) => {
-  res.sendStatus(200);
+  res.sendStatus(200); //OK
 });
 
 app.patch("/user/angela", (req, res) => {
-  res.sendStatus(200);
+  res.sendStatus(200); //OK
 });
 
 app.delete("/user/angela", (req, res) => {
   //Deleting
-  res.sendStatus(200);
+  res.sendStatus(200); //OK
 });
 
 app.listen(port, () => {
