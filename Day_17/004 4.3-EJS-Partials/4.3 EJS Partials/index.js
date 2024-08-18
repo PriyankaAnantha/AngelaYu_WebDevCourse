@@ -15,7 +15,7 @@ Step 3: Add the routes to handle the render of the about and contact pages.
   Hint: Check the nav bar in the header.ejs to see the button hrefs
 Step 4: Add the partials to the about and contact pages to show the header and footer on those pages. */
 
-app.set("view engine", "ejs");
+app.set("view engine", "ejs"); // to use ejs templates for rendering html 
 app.use(express.static("public")); // to serve static files like css and images
 
 app.get("/", (req, res) => {
