@@ -9,7 +9,8 @@ const port = 3000;
 
 
 app.get ("/", (req, res) => {
-    res.render("index.ejs", {daytype: });
+    res.render("index.ejs", {daytype:'a weekday', advice: 'Drink more booze!'});
+} );
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
