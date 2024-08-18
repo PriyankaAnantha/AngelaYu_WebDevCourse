@@ -6,7 +6,10 @@ const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {});
+app.get("/", (req, res) => {
+  res.render("index.ejs");
+  
+});
 
 app.post("/submit", (req, res) => {});
 
