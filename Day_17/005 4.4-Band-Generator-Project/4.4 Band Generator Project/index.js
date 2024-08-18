@@ -35,7 +35,7 @@ app.post("/submit", (req, res) => {
   //Hint: You can use the length of the array to generate a random index.
   const randomAdj = adj[Math.floor(Math.random() * adj.length)];
   const randomNoun = noun[Math.floor(Math.random() * noun.length)];
-  res.render("solution.ejs", {
+  res.render("index.ejs", {
     adjective: randomAdj,
     noun: randomNoun,
   });
