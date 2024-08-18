@@ -22,6 +22,12 @@
     <!-- List goes here if current second is even. -->
     <!-- Otherwise it should display the following: -->
     <!-- <p>No items to display</p> -->
+
+    <% items.forEach(function(fruit) { %>
+    <li>
+      <!-- List item goes here -->
+      <%= fruit %>
+
   </ul>
   <% } else { %>
   <p>No items to display</p>
