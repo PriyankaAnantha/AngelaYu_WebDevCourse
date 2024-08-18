@@ -99,3 +99,20 @@ Feel free to contribute to this roadmap by suggesting resources or new projects 
 ## License
 
 This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+
+## node commands 
+IN TERMINAL
+
+cd dragdropthedirectory 
+cd .. ---> takes you to the previous directory 
+cd ~ --> takes you to the root 
+touch somename.extension --> create a file 
+
+--refer unix commands module notes in book 
+
+npm install or npm i --> installs all dependencies in the current package.json 
+CRTL C --> EXIT SERVER 
+nodemon filename.extension --> get the server up and running 
+visit localhost:portnumber/
+
