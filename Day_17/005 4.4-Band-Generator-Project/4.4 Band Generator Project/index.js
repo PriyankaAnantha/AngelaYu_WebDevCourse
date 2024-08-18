@@ -4,23 +4,42 @@ import bodyParser from "body-parser";
 const app = express();
 const port = 3000;
 
+app.set("view engine", "ejs");
+app.use(express.static("public")); //Step 2
+
 //Step 3 - Make the styling show up.
 //Hint 1: CSS files are static files!
 //Hint 2: The header and footer are partials.
 //Hint 3: Add the CSS link in header.ejs
 
 //Step 4 - Add a dynamic year to the footer.
-//Hint: Google to find out how to get the current year using JS.
+//Hint: Google to find out how to get the current year using JS. 
+//how to get the current year using JS ?
+// answer is to use the Date object in JS to get the current year.
+// here is the code to get the current year using JS
+ const date = new Date();
+ const year = date.getFullYear();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   //Step 1 - Make the get route work and render the index.ejs file.
+  res.render("index.ejs", { year: year });
 });
 
 app.post("/submit", (req, res) => {
   //Step 2 - Make the generate name functionality work
   //Hint: When the "Generate Name" button in index.ejs is clicked, it should hit up this route.
+  //Hint: You can use the Math.random() method to generate a random number.
+  //Hint: You can use the Math.floor() method to round down to the nearest whole number.
+  //Hint: You can use the length of the array to generate a random index.
+  const randomAdj = adj[Math.floor(Math.random() * adj.length)];
+  const randomNoun = noun[Math.floor(Math.random() * noun.length)];
+  res.render("solution.ejs", {
+    adjective: randomAdj,
+    noun: randomNoun,
+  });
+  
   //Then:
   //1. You should randomly pick an adjective from the const "adj" and a noun from const "noun",
   //scroll down to see the two arrays.
