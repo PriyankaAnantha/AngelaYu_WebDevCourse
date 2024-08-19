@@ -1,6 +1,7 @@
 # Project-wide .gitignore file
 .DS_Store
 __MACOSX
+
 # Logs
 logs
 *.log
