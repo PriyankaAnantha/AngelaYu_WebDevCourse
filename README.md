@@ -1,7 +1,9 @@
 
 # Web Development Journey Tracker
 
-This repository documents my learning journey in web development, starting from the basics and progressing to more advanced concepts. It includes theory from [Udemy Web Development Course](https://www.udemy.com/topic/web-development/) and hands-on projects from [Sheryians' Front-End Domination Course](https://sheryians.com/courses/courses-details/Front-End%20Domination:%20Create%20Anything%20with%20Code).
+This repository documents my learning journey in web development, starting from the basics and progressing to more advanced concepts. It follows the [Udemy Web Development Course](https://www.udemy.com/topic/web-development/) by Dr.Angela Yu. 
+<!--and hands-on projects from [Sheryians' Front-End Domination Course](https://sheryians.com/courses/courses-details/Front-End%20Domination:%20Create%20Anything%20with%20Code).
+ -->
 
 
 ## Roadmap Overview
@@ -30,7 +32,7 @@ This repository documents my learning journey in web development, starting from 
    - Working with APIs and third-party services.
    - Introduction to React.js.
 
-## Milestones & Projects
+## Projects Ideas
 [Project 1](https://modern-shop-frontend.netlify.app/)
 
 A frontend responsive website created with HTML, and CSS.
@@ -101,18 +103,19 @@ Feel free to contribute to this roadmap by suggesting resources or new projects 
 This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
 
-## node commands 
-IN TERMINAL
 
-cd dragdropthedirectory 
-cd .. ---> takes you to the previous directory 
-cd ~ --> takes you to the root 
-touch somename.extension --> create a file 
+## Node Commands
 
---refer unix commands module notes in book 
+### Terminal Commands
 
-npm install or npm i --> installs all dependencies in the current package.json 
-CRTL C --> EXIT SERVER 
-nodemon filename.extension --> get the server up and running 
-visit localhost:portnumber/
+- `cd dragdropthedirectory` - Navigate to the specified directory.
+- `cd ..` - Move to the previous directory.
+- `cd ~` - Move to the root directory.
+- `touch somename.extension` - Create a new file.
 
+### Node.js Commands
+
+- `npm install` or `npm i` - Install all dependencies listed in `package.json`.
+- `CTRL + C` - Exit the server.
+- `nodemon filename.extension` - Start the server with Nodemon.
+- Visit `localhost:portnumber/` to access the server.
