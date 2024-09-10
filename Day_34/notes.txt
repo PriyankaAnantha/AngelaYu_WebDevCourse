@@ -1,0 +1,19 @@
+# Databases explained SQL vs NoSQL
+
+### **Module Introduction: Data Persistence and Databases**
+
+### **Key Concepts**
+
+- **Data Persistence**: The ability to store data beyond a temporary state, ensuring it survives beyond server restarts.
+- **Temporary Memory vs. Persistent Storage**: When data is stored in variables, it is temporary and can be wiped when the server is refreshed. To make data permanent, databases are used.
+
+### **Example:**
+
+- When building an API, blog posts stored in variables are wiped after restarting the server. This is because the data is stored in temporary memory, which is not persistent.
+
+### **History of Storage Devices:**
+
+- **Old Storage**: A memory disk from a computer museum in Bletchley Park stored only **4 MB** of data.
+- **Modern Storage**: Despite technological advancements, the fundamental principles of storing data remain similar, involving magnetic polarity for data storage.
+
+
