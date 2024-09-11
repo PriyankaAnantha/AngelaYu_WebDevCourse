@@ -1,0 +1,129 @@
+https://www.w3schools.com/sql/sql_datatypes.asp
+
+https://www.w3schools.com/sql/sql_primarykey.asp
+
+---
+
+### Creating a Database with SQL
+
+**Objective**:
+This lesson introduces SQL databases and covers the process of creating and manipulating tables using SQL queries.
+
+---
+
+### Key Concepts:
+
+- **SQL**: Structured Query Language used for interacting with databases.
+    - Keywords: `SELECT`, `FROM`, `CREATE`, `TABLE`, etc.
+    - Common SQL operations:
+        - Create, Read, Update, Destroy (CRUD operations).
+- **CRUD**: The core operations performed on a database.
+    - **Create**: Adding new records.
+    - **Read**: Querying data from the database.
+    - **Update**: Modifying existing records.
+    - **Delete**: Removing records from the database.
+
+---
+
+### Resources:
+
+- **W3Schools SQL Documentation**: [w3schools.com/sql](https://www.w3schools.com/sql/) for learning SQL syntax and operations.
+- [**sqliteonline.com**](http://sqliteonline.com/): A playground environment to practice SQL queries.
+
+---
+
+### Step-by-Step: Creating a SQL Database Table
+
+### 1. **Accessing SQLite Online**
+
+- Use the provided link to access the environment with a pre-populated `customers` table.
+- The table contains:
+    - **Columns**: `id`, `first_name`, `last_name`, `address`.
+    - **Rows (Records)**: Two existing customer entries.
+
+### 2. **Creating a Products Table**
+
+### SQL Syntax for Table Creation:
+
+```sql
+CREATE TABLE table_name (
+    column_name1 data_type1,
+    column_name2 data_type2,
+    ...
+);
+
+```
+
+- **Keywords**: `CREATE`, `TABLE`.
+- **Parentheses**: Encapsulate column definitions.
+- **Commas**: Separate individual column definitions.
+
+### 3. **Building the `products` Table**:
+
+```sql
+CREATE TABLE products (
+    id INTEGER,
+    name TEXT,
+    price MONEY,
+    PRIMARY KEY(id)
+);
+
+```
+
+### Key Points:
+
+- **`id`**: `INTEGER` type, serves as the primary key.
+- **`name`**: `TEXT` type, stores the product name.
+- **`price`**: `MONEY` type, used to store monetary values.
+- **`PRIMARY KEY`**: Ensures each product has a unique `id`.
+- **`NOT NULL`**: Added to the `id` field to ensure every record has an ID.
+
+### Error Handling:
+
+- If any issues arise, check for:
+    - Typos.
+    - Missing commas between fields.
+    - Incorrect SQL syntax.
+
+---
+
+### Inserting Data into the `products` Table
+
+### SQL Syntax for Inserting Data:
+
+```sql
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...);
+
+```
+
+### 1. **Inserting a Single Product Entry**:
+
+```sql
+INSERT INTO products
+VALUES (1, 'Pen', 1.20);
+
+```
+
+### Key Points:
+
+- **`INSERT INTO`**: SQL command to insert data.
+- **Parentheses**: Contain values in the order corresponding to table columns.
+- **Data types**:
+    - **`1`**: Integer for `id`.
+    - **`'Pen'`**: String for the product `name`.
+    - **`1.20`**: Monetary value for the `price`.
+
+### 2. **Viewing the Table**:
+
+- After running the SQL command, right-click on the `products` table in the browser and click "Show table" to view the newly inserted record.
+
+---
+
+### Summary:
+
+- **SQL Basics**: Understanding table creation and insertion syntax.
+- **CRUD**: Fundamental database operations.
+- **SQL Playground**: Use online tools like SQLite for practice.
+
+---
